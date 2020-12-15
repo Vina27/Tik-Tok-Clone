@@ -6,7 +6,6 @@ function App() {
   return (
     //BEM 
     <div className="App">
-      <h1>Tik-Tok-Clone 🚀 </h1>
       <div className="app_videos">
         <Video />
         <Video />
