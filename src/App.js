@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; 
+import Video from "./Video"; 
+import "./App.css";
 
 function App() {
   return (
+    //BEM 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Tik-Tok-Clone 🚀 </h1>
+      <div className="app_videos">
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+       </div>
     </div>
   );
 }
 
 export default App;
+
+
+//video components 
+//footer 
+//Video Sidebar heart, chat, share 
+//footer ticker, disk spinner
