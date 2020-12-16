@@ -1,5 +1,6 @@
-import React from "react"; 
-import Video from "./Video"; 
+import React, { useState, useEffect } from "react";
+import Video from "./Video";
+//import db from "./firebase";
 import "./App.css";
 
 function App() {

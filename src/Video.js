@@ -1,13 +1,21 @@
-import React, { useRef } from 'react';
-import './Video.css';
+import React, { useRef, useState } from "react";
+import "./Video.css";
 
 
 function Video() {
+    const [playing, setPlay] =  useState(false); 
     const videoRef = useRef(null); 
 
     const onVideoPress = () => {
-        videoRef.current.play(); 
-    }
+        if (playing) {
+            videoRef.current.pause(); 
+            setPlay(false); 
+
+        }else {
+            videoRef.current.play(); 
+            setPlay(true); 
+        }
+    };
 
 
     return (
@@ -16,7 +24,7 @@ function Video() {
             loop
             onClick={onVideoPress}
             ref={videoRef}
-            src="https://www.tiktok.com/@arshsoni10/video/6781848546199997701?lang=en&sender_device=pc&sender_web_id=6906597055420155398&is_from_webapp=1"></video>
+            src= "https://www.tiktok.com/@william.ngvyen/video/6906685723814956293?lang=en"></video>
         </div>
     );
 }
